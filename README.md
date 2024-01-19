@@ -2,4 +2,4 @@
 
 - Olga Durham
 - 040687883
-- not chosen yet
+- Pokedex
