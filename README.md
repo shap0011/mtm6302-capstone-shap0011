@@ -3,3 +3,7 @@
 - Olga Durham
 - 040687883
 - Pokedex
+
+# Capstone Project - Part 2
+
+- added empty Mockup-test.pdf document
