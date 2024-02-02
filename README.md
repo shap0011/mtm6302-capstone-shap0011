@@ -37,7 +37,7 @@
     - Notification, Button text, List Pokemon names Tw Cen MT 38px Regular
     - List Pokemon Characteristics Tw Cen MT 28px Regular
 6. Create footer
-    - Menu, Contact, @ACollege Font TW Cen MT Regular 28px
+    - Menu, Contact, Copyright Font TW Cen MT Regular 28px
     - Logo text 48px
 
 
@@ -53,7 +53,7 @@
     - List Pokemon Characteristics Tw Cen MT 28px Regular
 10. Create footer
     - Menu Font TW Cen MT Regular 28px
-    - Contact, @ACollege Font TW Cen MT Regular 23px
+    - Contact, Copyright Font TW Cen MT Regular 23px
     - Logo text 48px
 
 
@@ -70,5 +70,5 @@
     - List Pokemon Characteristics Tw Cen MT 23px Regular
 14. Create footer  
     - Menu Font TW Cen MT Regular 23px
-    - @ACollege Font TW Cen MT Regular 18px
+    - Copyright Font TW Cen MT Regular 18px
     - Logo text 48px 
