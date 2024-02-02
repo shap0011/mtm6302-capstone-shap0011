@@ -25,15 +25,51 @@
         - Tw Cen MT Regular
         - ~~Raleway Regular~~
         - Century Gothic Regular
-2. Create 1920 x 1080 Web 1920 Web App layout 
-3. Create header
-4. Create main
-5. Create footer
-6. Create 768 x 1024 iPad Web App layout 
-7. Create header
-8. Create main
-9. Create footer
-10. Create 375 x 667 iPhone 6/7 Web App layout 
-11. Create header
-12. Create main
-13. Create footer   
+
+
+3. Create 1920 x 1080 Web 1920 Web App layout 
+4. Create header
+    - Menu Font TW Cen MT Regular 38px 
+    - Logo text Font TW Cen MT Regular 48px
+5. Create main
+    - Font for lbl Tw Cen MT 48px Regular
+    - Text Century Gothic 28 Regular
+    - Characteristics Tw Cen MT 38px
+    - Notification, Button text, List Pokemon names Tw Cen MT 38px Regular
+    - List Pokemon Characteristics Tw Cen MT 28px Regular
+6. Create footer
+    - Menu, Contact, @ACollege Font TW Cen MT Regular 28px
+    - Logo text 48px
+
+
+7. Create 768 x 1024 iPad Web App layout 
+8. Create header
+    - Menu Font TW Cen MT Regular 38px 
+    - Logo text Font TW Cen MT Regular 48px
+9. Create main
+    - Font for lbl Tw Cen MT 48px Regular
+    - Text Century Gothic 28 Regular
+    - Characteristics Tw Cen MT 38px
+    - Notification, Button text, List Pokemon names Tw Cen MT 38px Regular
+    - List Pokemon Characteristics Tw Cen MT 28px Regular
+10. Create footer
+    - Menu Font TW Cen MT Regular 28px
+    - Contact, @ACollege Font TW Cen MT Regular 23px
+    - Logo text 48px
+
+
+11. Create 375 x 667 iPhone 6/7 Web App layout 
+12. Create header
+    - Menu Font TW Cen MT Regular 38px 
+    - Logo text Font TW Cen MT Regular 48px
+13. Create main
+    - Font for lbl Tw Cen MT 48px Regular
+    - Text Century Gothic 23 Regular
+    - Characteristics Tw Cen MT 23px
+    - Notification, List Pokemon names Tw Cen MT 23px Regular
+    - Button text, List Pokemon names Tw Cen MT 28px Regular
+    - List Pokemon Characteristics Tw Cen MT 23px Regular
+14. Create footer  
+    - Menu Font TW Cen MT Regular 23px
+    - @ACollege Font TW Cen MT Regular 18px
+    - Logo text 48px 
