@@ -23,7 +23,6 @@
         - Blue #48CBD9 RGB value (72, 203, 217)
     - Fonts:
         - Tw Cen MT Regular
-        - ~~Raleway Regular~~
         - Century Gothic Regular
 
 
