@@ -72,3 +72,17 @@
     - Menu Font TW Cen MT Regular 23px
     - Copyright Font TW Cen MT Regular 18px
     - Logo text 48px 
+
+# Capstone Project - Part 3
+
+- Create a part-3 branch from the part-2   branch    
+- Switch to the part-3
+
+## Create a prototype of the web application using HTML, CSS, and JavaScript
+
+1. Following files have been added  to the prototype:
+    - HTML (index.html)
+    - CSS (style.css)
+    - JavaScript (script.js)
+2. Create the closely matched the mockup prototype:
+    - Create layout    
