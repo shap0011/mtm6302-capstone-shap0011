@@ -85,4 +85,5 @@
     - CSS (style.css)
     - JavaScript (script.js)
 2. Create the closely matched the mockup prototype:
-    - Create layout    
+    - Create layout: header, main, footer
+    - Create navigation bar with logo (brand) link, 'Home', 'How to Play', 'Gallery', and 'My Pokémon' links. Add a toggle button and 'hamburger' (toggler) icon   
