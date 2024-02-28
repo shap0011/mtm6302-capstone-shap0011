@@ -1,0 +1,38 @@
+/* CSS Document */
+@import url(bootstrap.min.css);
+@import url(typography.css);
+
+:root {
+    --header-bg-color: #0B3C40;
+    --main-bg-color: #694057;
+    --footer-bg-color: #0B3C40;
+    --light-blue-color: #52C5D5;
+    --yellow-color: #FEEC70;
+    --pink-color: #DA4899;
+    --white-color: #FFFFFF;
+}
+
+/* .main { */
+body {
+    background-color: var(--main-bg-color);
+}
+
+.header {
+    background-color: var(--header-bg-color);
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.logo {
+    height: 107px;
+}
+
+.container {
+    max-width: 80%;
+}
+
+footer .container {
+    max-width: 60%;
+}

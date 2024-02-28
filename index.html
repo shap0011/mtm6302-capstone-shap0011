@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project - Part 3</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+<body class="d-flex flex-column h-100">
+    <header class="header py-3">
+        <nav class="navbar navbar-expand-md py-0">
             <div class="container">
-                <a href="#" class="navbar-brand">LOGO SVG</a>
+                <a href="#" id="linkLogoHeader" class="navbar-brand"></a>
+                <a href="#" class="navbar-brand logo-literal">Pokedex</a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,17 +33,22 @@
                     </ul>
                 </div>
             </div>
-
-
         </nav>
     </header>
-    <main>
-
+    <main class="main py-3">
+        <div class="container">
+            <h2 class="heading-h2"><u>How to Play</u></h2>
+            <h2 class="heading-h2"><u>Gallery</u></h2>
+            <h2 class="heading-h2"><u>My Pokémon</u></h2>
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer mt-auto py-3">
+    <!-- <footer class="footer mt-auto py-3 bg-dark"> -->
+        <div class="container">
+            <a href="#" id="linkLogoFooter" class="navbar-brand"></a>
+        </div>
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

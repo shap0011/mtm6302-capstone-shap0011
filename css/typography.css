@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* @font-face rule */
+/* create custom font 'Tw Cen MT' */
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('/assets/fonts/tw_cen_mt_regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/tw_cen_mt_regular-webfont.woff') format('woff'),
+    url('/assets/fonts/Tw\ Cen\ MT\ Regular.ttf') format('truetype');
+}
+
+.nav-link, .logo-literal, h2 {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+}
+
+.nav-link {
+   font-size: 2.375rem;
+   color: var(--pink-color);
+   margin-left: 50px;
+}
+
+.logo-literal {
+   font-size: 3rem;
+   color: var(--white-color);
+}
+
+.heading-h2 {
+   font-size: 3rem;
+   color: var(--yellow-color);
+}

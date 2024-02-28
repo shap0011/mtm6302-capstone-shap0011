@@ -17,7 +17,7 @@
     - Colors:
         - White #FFFFFF RGB value (255, 255, 255)
         - Pink #DA4899 RGB value (204, 51, 153)
-        - Dark Green #0B3C40 RGB value (11, 60, 64)
+        - Dark Teal #0B3C40 RGB value (11, 60, 64)
         - Brown #683F56 RGB value (132, 87, 112)
         - Yellow #FFED71 RGB value (255, 237, 113)
         - Blue #48CBD9 RGB value (72, 203, 217)
