@@ -21,7 +21,7 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 2.375rem;
+   font-size: 1.75rem;
    color: var(--pink-color);
    margin-left: 50px;
 }
@@ -30,7 +30,7 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 3rem;
+   font-size: 2rem;
    color: var(--white-color);
 }
 
@@ -38,7 +38,7 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 3rem;
+   font-size: 2rem;
    color: var(--yellow-color);
 }
 
@@ -46,7 +46,7 @@
    font-family: 'Century Gothic';
    font-weight: normal;
    font-style: normal;
-   font-size: 1.75rem;
+   font-size: 1.25rem;
    color: var(--yellow-color);
 }
 
@@ -54,7 +54,7 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 2.375rem;
+   font-size: 1.75rem;
    color: var(--light-blue-color);
 }
 
@@ -62,7 +62,7 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 2.375rem;
+   font-size: 1.75rem;
    color: var(--yellow-color);
 }
 
@@ -70,23 +70,19 @@
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 2.375rem;
+   font-size: 1.75rem;
    color: var(--main-bg-color);
 }
 
-.footer .nav-link, p .footer-par{
-   font-family: 'Tw Cen MT';
-   font-weight: normal;
-   font-style: normal;
-   font-size: 1.75rem;
-   color: var(--pink-color);
+.footer .nav-link {
+   font-size: 1.25rem;
 }
 
 .footer-par{
    font-family: 'Tw Cen MT';
    font-weight: normal;
    font-style: normal;
-   font-size: 1.75rem;
+   font-size: 1.25rem;
    color: var(--pink-color);
 }
 

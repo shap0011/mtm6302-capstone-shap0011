@@ -58,6 +58,11 @@ footer .container {
     --bs-nav-link-hover-color: var(--light-blue-color);
 }
 
+/* .footer .navbar-nav:focus,
+.footer .navbar-nav:hover {
+    --bs-nav-link-hover-color: var(--light-blue-color);
+} */
+
 .navbar-brand:focus, .navbar-brand:hover {
     color: var(--light-blue-color);
 }
@@ -101,7 +106,3 @@ footer .container {
 .mypok-par {
     margin-bottom: 15px;
 }
-
-/* .footer {
-    
-} */
