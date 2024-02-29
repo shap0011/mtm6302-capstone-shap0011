@@ -1,54 +1,144 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capstone Project - Part 3</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body class="d-flex flex-column h-100">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <header class="header py-3">
-        <nav class="navbar navbar-expand-md py-0">
-            <div class="container">
-                <a href="#" id="linkLogoHeader" class="navbar-brand"></a>
-                <a href="#" class="navbar-brand logo-literal">Pokedex</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBar">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">How to Play</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">My Pokémon</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md py-0">
+        <div class="container">
+          <a href="#" id="linkLogoHeader" class="navbar-brand"></a>
+          <a href="#" class="navbar-brand logo-literal">Pokedex</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navBar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">How to Play</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">My Pokémon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="main py-3">
-        <div class="container">
+      <div class="container">
+        <section id="howtoplay" class="row mb-5">
+          <div class="col-xl-3 htp-h2">
             <h2 class="heading-h2"><u>How to Play</u></h2>
+          </div>
+          <div class="col-xl-9 htp-label label label-default">
+            <p class="htp-par">
+              Clicking on Pokémon will display a larger image of the Pokémon and
+              additional details about the Pokémon. A "Load More" button allows
+              to load the next 20 Pokémon on the page. You can mark Pokémon as
+              caught by clicking on the white circle with a pink dot. You can
+              release the caught Pokémon by clicking on the pink circle with a
+              white dot.
+            </p>
+          </div>
+        </section>
+        <section id="gallery" class="row mb-5">
+          <div class="col-xl-3 gal-h2">
             <h2 class="heading-h2"><u>Gallery</u></h2>
+          </div>
+          <div class="col-xl-7 gal-label label">
+            <p class="gal-par">
+              Congratulations! You caught
+              <span class="pokname">Bulbasaur</span> Pokémon!
+            </p>
+          </div>
+          <div class="col-xl-2 gal-btn">
+            <button class="btn">Load More...</button>
+          </div>
+        </section>
+        <section id="mypokemon" class="row">
+          <div class="col-xl-3 mypok-h2">
             <h2 class="heading-h2"><u>My Pokémon</u></h2>
-        </div>
+          </div>
+          <div class="col-xl-7 mypok-label label label-default">
+            <p class="mypok-par">Try to catch a Pokémon!</p>
+            <p class="mypok-par">Try to catch a Pokémon!</p>
+            <p class="mypok-par">Try to catch a Pokémon!</p>
+          </div>
+          <div class="col-xl-2">
+            <button class="btn">Load More...</button>
+            <button class="btn">Load More...</button>
+            <button class="btn">Load More...</button>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer mt-auto py-3">
-    <!-- <footer class="footer mt-auto py-3 bg-dark"> -->
-        <div class="container">
-            <a href="#" id="linkLogoFooter" class="navbar-brand"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                   <a href="#" id="linkLogoFooter" class="navbar-brand"></a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="navbar-brand logo-literal">Pokedex</a>
+                </li>
+            </ul>    
+          </div>
+          <div class="col-xl-4">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-0">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-0">How to Play</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-0">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-0">My Pokémon</a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <ul class="navbar-nav text-end">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">1385 Woodroffe Avenue</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Ottawa, Ontario K2G 1V8</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">613-123-1234</a>
+                </li>
+            </ul>
+          </div>
         </div>
+        <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-10 text-center">
+                <p class="footer-par">&copy;2024 Algonquin College of Applied Arts and Technology</p>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+      </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

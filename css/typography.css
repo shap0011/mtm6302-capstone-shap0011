@@ -9,24 +9,84 @@
     url('/assets/fonts/Tw\ Cen\ MT\ Regular.ttf') format('truetype');
 }
 
-.nav-link, .logo-literal, h2 {
-   font-family: 'Tw Cen MT';
-   font-weight: normal;
-   font-style: normal;
+/* create custom font 'Tw Cen MT' */
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/assets/fonts/century_gothic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/century_gothic-webfont.woff') format('woff'),
+    url('/assets/fonts/Century\ Gothic.ttf') format('truetype');
 }
 
 .nav-link {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
    font-size: 2.375rem;
    color: var(--pink-color);
    margin-left: 50px;
 }
 
 .logo-literal {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
    font-size: 3rem;
    color: var(--white-color);
 }
 
 .heading-h2 {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
    font-size: 3rem;
    color: var(--yellow-color);
 }
+
+.htp-par {
+   font-family: 'Century Gothic';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1.75rem;
+   color: var(--yellow-color);
+}
+
+.label {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 2.375rem;
+   color: var(--light-blue-color);
+}
+
+.pokname {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 2.375rem;
+   color: var(--yellow-color);
+}
+
+.btn {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 2.375rem;
+   color: var(--main-bg-color);
+}
+
+.footer .nav-link, p .footer-par{
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1.75rem;
+   color: var(--pink-color);
+}
+
+.footer-par{
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1.75rem;
+   color: var(--pink-color);
+}
+

@@ -10,6 +10,13 @@
     --yellow-color: #FEEC70;
     --pink-color: #DA4899;
     --white-color: #FFFFFF;
+    
+        --bs-breakpoint-xs: 0;
+        --bs-breakpoint-sm: 576px;
+        --bs-breakpoint-md: 768px;
+        --bs-breakpoint-lg: 992px;
+        --bs-breakpoint-xl: 1200px;
+        --bs-breakpoint-xxl: 1400px;
 }
 
 /* .main { */
@@ -36,3 +43,65 @@ body {
 footer .container {
     max-width: 60%;
 }
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(218,72,153, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-color: var(--pink-color);
+}
+
+.navbar-toggler {
+    border-color: var(--pink-color);
+    color: var(--pink-color);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--light-blue-color);
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: var(--light-blue-color);
+}
+
+.logo:focus .cls-2, 
+.logo:focus .cls-3, 
+.logo:focus .cls-5, 
+.logo:hover .cls-2,
+.logo:hover .cls-3,
+.logo:hover .cls-5 {
+    fill: var(--pink-color);
+}
+
+.logo:focus .cls-4, 
+.logo:hover .cls-4 {
+    fill: var(--light-blue-color);
+}
+
+.logo:focus .cls-1, 
+.logo:hover .cls-1 {
+    fill: none;
+}
+
+.gal-label, .mypok-label {
+    border: 1px solid var(--yellow-color);
+    border-radius: 10px;
+    padding: 0 30px;
+ }
+
+.btn {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+ }
+
+.htp-par, .gal-par, .mypok-par{
+    margin-block-end: 0px;
+}
+
+.mypok-par {
+    margin-bottom: 15px;
+}
+
+/* .footer {
+    
+} */
