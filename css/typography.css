@@ -9,7 +9,7 @@
     url('/assets/fonts/Tw\ Cen\ MT\ Regular.ttf') format('truetype');
 }
 
-/* create custom font 'Tw Cen MT' */
+/* create custom font 'Century Gothic' */
 @font-face {
     font-family: 'Century Gothic';
     src: url('/assets/fonts/century_gothic-webfont.woff2') format('woff2'),
