@@ -58,6 +58,14 @@
    color: var(--light-blue-color);
 }
 
+.par-data {
+   font-family: 'Tw Cen MT';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1.75rem;
+   color: var(--pink-color);
+}
+
 .pokname {
    font-family: 'Tw Cen MT';
    font-weight: normal;

@@ -11,12 +11,12 @@
     --pink-color: #DA4899;
     --white-color: #FFFFFF;
     
-        --bs-breakpoint-xs: 0;
+        /* --bs-breakpoint-xs: 0;
         --bs-breakpoint-sm: 576px;
         --bs-breakpoint-md: 768px;
         --bs-breakpoint-lg: 992px;
         --bs-breakpoint-xl: 1200px;
-        --bs-breakpoint-xxl: 1400px;
+        --bs-breakpoint-xxl: 1400px; */
 }
 
 /* .main { */
@@ -106,3 +106,119 @@ footer .container {
 .mypok-par {
     margin-bottom: 15px;
 }
+
+.pok-bigimg {
+    background-color: var(--yellow-color);
+}
+
+.pok-bigimg img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.pok-data {
+    background-color: var(--light-blue-color);  
+    /* padding: 0;  */
+}
+
+.name, .species, .type, .ability {
+    background-color: var(--white-color);  
+    margin: 30px;
+}
+
+.par-data {
+    padding: 15px;
+}
+
+.col-xl-1-5,
+.col-md-1-5,
+.col-sm-1-5 {
+    position: relative;
+ }
+
+.col-xl-1-5,
+.col-md-1-5,
+.col-sm-1-5 {
+    width: 17%;
+    float: left;
+    background-color: var(--light-blue-color); 
+    margin: 20px 35px 0 0;
+ }
+
+.caught {
+    background-color: var(--yellow-color);
+ }
+
+.pok-sm-img {
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: auto;
+ }
+
+.white-btn {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 25%;
+    /* display: block;
+    margin: auto; */
+ }
+
+.col-xl-1-5:first,
+.col-md-1-5:first,
+.col-sm-1-5:first {
+margin-left: 0;
+ }
+
+ /* tablet */
+
+ @media (max-width:1024px) and (min-width: 431px) {
+
+    .navbar-expand-md .navbar-nav {
+        flex-direction: column;
+    }
+
+    .col-md-1-5 {
+        width: 25%;
+        float: left;
+        background-color: var(--light-blue-color); 
+        margin: 20px;
+     }
+    
+    .pok-sm-img {
+        position: relative;
+        width: 110%;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+/* mobile */
+
+@media (max-width: 430px) {
+    
+    .col-sm-1-5 {
+        width: 30%;
+        float: left;
+        background-color: var(--light-blue-color); 
+        margin: 20px 35px 0 20px;
+     }
+
+     
+    .pok-sm-img {
+        width: 110%;
+    }
+
+    .btn {
+        display: grid;
+        width: 100%;
+        margin: 20px 20px 20px 0;
+    }
+
+}
+
+ 
