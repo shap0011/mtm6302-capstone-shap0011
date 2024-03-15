@@ -58,11 +58,6 @@ footer .container {
     --bs-nav-link-hover-color: var(--light-blue-color);
 }
 
-/* .footer .navbar-nav:focus,
-.footer .navbar-nav:hover {
-    --bs-nav-link-hover-color: var(--light-blue-color);
-} */
-
 .navbar-brand:focus, .navbar-brand:hover {
     color: var(--light-blue-color);
 }
@@ -119,7 +114,6 @@ footer .container {
 
 .pok-data {
     background-color: var(--light-blue-color);  
-    /* padding: 0;  */
 }
 
 .name, .species, .type, .ability {
@@ -162,8 +156,6 @@ footer .container {
     top: 20px;
     right: -20px;
     width: 25%;
-    /* display: block;
-    margin: auto; */
  }
 
 .col-xl-1-5:first,
@@ -205,8 +197,7 @@ margin-left: 0;
         background-color: var(--light-blue-color); 
         margin: 20px 35px 0 20px;
      }
-
-     
+    
     .pok-sm-img {
         width: 110%;
     }
@@ -216,7 +207,6 @@ margin-left: 0;
         width: 100%;
         margin: 20px 20px 20px 0;
     }
-
 }
 
  
