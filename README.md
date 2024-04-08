@@ -91,3 +91,10 @@
 3. Created a block with big pokemon image and a block with pokemon details.
 4. Created grid 5 x 4. Inserted pokemon images and button images.
 5. Media query added. Responsive mobile and tablet layouts.
+
+# Capstone Project - Part 4
+
+- Create a part-4 branch from the part-3 branch
+- Switch to the part-4
+- logoSVG.js file created.The svg-related code replaced to there.
+
