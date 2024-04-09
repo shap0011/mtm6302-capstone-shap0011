@@ -98,3 +98,8 @@
 - Switch to the part-4
 - logoSVG.js file created.The svg-related code replaced to there.
 
+1. Retrieved the elements of the *#pokemon*, *#pokemonBigImg*, and *#myChosenPokemon* storing the elements to the variables **$pokemon**, **$pokemonBigImg**, and **$myPokemon**.
+2. Created new variables **pokemon** and **myPokemon** and set them to empty arrays.
+3. Created a function **buildPokemon(pokemon)** to build the *pokemon list*.
+4. Create an *async function getPokemon()* to populate the *20 pokemon gallery*
+5. Write code to run when the page loads and get the pokemon gallery *getPokemon()*

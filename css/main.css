@@ -112,7 +112,7 @@ footer .container {
     margin: auto;
 }
 
-.pok-data {
+.pokInfoBlock {
     background-color: var(--light-blue-color);  
 }
 
@@ -121,7 +121,7 @@ footer .container {
     margin: 30px;
 }
 
-.par-data {
+.parInfo {
     padding: 15px;
 }
 
