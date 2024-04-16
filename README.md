@@ -100,6 +100,9 @@
 
 1. Retrieved the elements of the *#pokemon*, *#pokemonBigImg*, and *#myChosenPokemon* storing the elements to the variables **$pokemon**, **$pokemonBigImg**, and **$myPokemon**.
 2. Created new variables **pokemon** and **myPokemon** and set them to empty arrays.
-3. Created a function **buildPokemon(pokemon)** to build the *pokemon list*.
+3. Created a function **buildPokemon(pokemon)** to build the *pokemon list*:
+   - use *if ... else if* statement to define pokemon id for two url length and build gallery of pokemon
+   - return html gallery with thumbnails  and pokemon name as values of *alt* and *title* image attributes 
 4. Create an *async function getPokemon()* to populate the *20 pokemon gallery*
-5. Write code to run when the page loads and get the pokemon gallery *getPokemon()*
+5. Write code to run when the page loads and get the pokemon gallery *getPokemon()*:
+
