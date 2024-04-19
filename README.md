@@ -104,5 +104,12 @@
    - use *if ... else if* statement to define pokemon id for two url length and build gallery of pokemon
    - return html gallery with thumbnails  and pokemon name as values of *alt* and *title* image attributes 
 4. Create an *async function getPokemon()* to populate the *20 pokemon gallery*
-5. Write code to run when the page loads and get the pokemon gallery *getPokemon()*:
+5. Write code to run when the page loads and get the pokemon gallery *getPokemon()*
+6. Write async function *getPok(id)* to fetch and display a single pokemon
+7. Change style of Big Pokemon Block for better usability (html, js, css)
+8. Define the event listener for the click event for a single pokemon
+9. Write a function *buildPokemonNext(pokemon)* to populate the gallery with next 20 pokemon
+10. Write async function *getPokemonNext()* to fetch next 20 pokemon
+11. Define the event listener for the click event to load next 20 pokemon
+12. Change style of Pokemon Gallery Block for better usability (html, js, css)
 
