@@ -32,7 +32,7 @@ function buildPokemon(pokemon){
       /><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
             <img
             class="white-btn"
-            src="/assets/images/durham_logo_white.png"
+            src="./assets/images/durham_logo_white.png"
             alt="White button"
             />      
         </a>
@@ -50,7 +50,7 @@ function buildPokemon(pokemon){
       /><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
             <img
               class="white-btn"
-              src="/assets/images/durham_logo_white.png"
+              src="./assets/images/durham_logo_white.png"
               alt="White button"
             />
         </a>
@@ -81,7 +81,7 @@ function buildPokemonNext(pokemon){
       /><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
             <img
               class="white-btn"
-              src="/assets/images/durham_logo_white.png"
+              src="./assets/images/durham_logo_white.png"
               alt="White button"
             />
         </a>
