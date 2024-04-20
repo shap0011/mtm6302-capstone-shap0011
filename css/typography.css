@@ -4,17 +4,17 @@
 /* create custom font 'Tw Cen MT' */
 @font-face {
     font-family: 'Tw Cen MT';
-    src: url('/assets/fonts/tw_cen_mt_regular-webfont.woff2') format('woff2'),
-    url('/assets/fonts/tw_cen_mt_regular-webfont.woff') format('woff'),
-    url('/assets/fonts/Tw\ Cen\ MT\ Regular.ttf') format('truetype');
+    src: url('./assets/fonts/tw_cen_mt_regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/tw_cen_mt_regular-webfont.woff') format('woff'),
+    url('./assets/fonts/Tw\ Cen\ MT\ Regular.ttf') format('truetype');
 }
 
 /* create custom font 'Century Gothic' */
 @font-face {
     font-family: 'Century Gothic';
-    src: url('/assets/fonts/century_gothic-webfont.woff2') format('woff2'),
-    url('/assets/fonts/century_gothic-webfont.woff') format('woff'),
-    url('/assets/fonts/Century\ Gothic.ttf') format('truetype');
+    src: url('./assets/fonts/century_gothic-webfont.woff2') format('woff2'),
+    url('./assets/fonts/century_gothic-webfont.woff') format('woff'),
+    url('./assets/fonts/Century\ Gothic.ttf') format('truetype');
 }
 
 .nav-link {
