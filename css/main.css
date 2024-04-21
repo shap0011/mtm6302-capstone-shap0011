@@ -161,13 +161,23 @@ footer .container {
     margin: 20px 35px 0 0;
  }
 
- .pokblock {
+
+
+.blue {
     background-color: var(--light-blue-color); 
  }
 
-.caught {
+.yellow {
     background-color: var(--yellow-color);
  }
+/* 
+ .galleryBtnWhite {
+    background-image: url('./assets/images/durham_logo_white.png');
+ }
+
+ .galleryBtnPink {
+    background-image: url('./assets/images/durham_logo_pink.png');
+ } */
 
 .pok-sm-img {
     position: relative;
@@ -176,7 +186,14 @@ footer .container {
     margin: auto;
  }
 
-.white-btn {
+.whiteBtn {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 25%;
+ }
+
+.pinkBtn {
     position: absolute;
     top: 20px;
     right: -20px;

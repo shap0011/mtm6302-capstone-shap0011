@@ -4,6 +4,7 @@ const $bigPok = document.getElementById('bigPokemon')
 const $galLabel = document.getElementById('galLabel')
 const $loadsNumber = document.getElementById('loadsNumber')
 const $startagain = document.getElementById('startagain')
+const $pokblock = document.getElementById('pokblock')
 const $loadmore2140 = document.querySelector('.loadmore2140')
 const url = 'https://pokeapi.co/api/v2/pokemon/'
 const urlNext2140 = 'https://pokeapi.co/api/v2/pokemon?offset=20&limit=20'
@@ -21,6 +22,7 @@ const urlNext241260 = 'https://pokeapi.co/api/v2/pokemon?offset=240&limit=20'
 const urlNext261280 = 'https://pokeapi.co/api/v2/pokemon?offset=260&limit=20'
 const urlNext281300 = 'https://pokeapi.co/api/v2/pokemon?offset=280&limit=20'
 const urlNext301320 = 'https://pokeapi.co/api/v2/pokemon?offset=300&limit=20'
+const urlNext321340 = 'https://pokeapi.co/api/v2/pokemon?offset=320&limit=20'
 
 // /** Empty arrays */
 // gallery of 20 pokemons
@@ -40,17 +42,22 @@ function buildPokemon(pokemon){
     if (pok.url.length == 36){
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
         alt="${pok.name} Small Pokémon" title="${pok.name}"
       /><span class="pokNum">${id}</span><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
-            <img
-            class="white-btn"
+          <img
+            class="pinkBtn"
+            src="./assets/images/durham_logo_pink.png"
+            alt="Pink button"
+          />          
+          <img
+            class="whiteBtn"
             src="./assets/images/durham_logo_white.png"
             alt="White button"
-            />     
+          />   
         </a>
     </div>
       `)
@@ -58,14 +65,19 @@ function buildPokemon(pokemon){
     } else if (pok.url.length == 37){
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
         alt="${pok.name} Small Pokémon" title="${pok.name}"
       /><span class="pokNum">${id}</span><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
             <img
-              class="white-btn"
+              class="pinkBtn hidden"
+              src="./assets/images/durham_logo_pink.png"
+              alt="Pink button"
+            />           
+            <img
+              class="whiteBtn"
               src="./assets/images/durham_logo_white.png"
               alt="White button"
             />
@@ -89,7 +101,7 @@ function buildPokemonNext2140(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -116,7 +128,7 @@ function buildPokemonNext4160(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -143,7 +155,7 @@ function buildPokemonNext6180(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -171,7 +183,7 @@ function buildPokemonNext81100(pokemon){
     if (pok.url.length == 37){
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -188,7 +200,7 @@ function buildPokemonNext81100(pokemon){
     } else if (pok.url.length == 38){
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -216,7 +228,7 @@ function buildPokemonNext101120(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length -1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -243,7 +255,7 @@ function buildPokemonNext121140(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -270,7 +282,7 @@ function buildPokemonNext141160(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -297,7 +309,7 @@ function buildPokemonNext161180(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -324,7 +336,7 @@ function buildPokemonNext181200(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -351,7 +363,7 @@ function buildPokemonNext201220(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -378,7 +390,7 @@ function buildPokemonNext221240(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -405,7 +417,7 @@ function buildPokemonNext241260(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -432,7 +444,7 @@ function buildPokemonNext261280(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -459,7 +471,7 @@ function buildPokemonNext281300(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -486,7 +498,34 @@ function buildPokemonNext301320(pokemon){
   
       let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
       html.push(`
-      <div class="pokblock col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
+      <img
+        class="pok-sm-img"     
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
+        alt="${pok.name} Small Pokémon" title="${pok.name}"
+      /><span class="pokNum">${id}</span><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
+            <img
+              class="white-btn"
+              src="./assets/images/durham_logo_white.png"
+              alt="White button"
+            />
+        </a>
+    </div>
+      `)
+  } 
+  return html
+}
+
+//Create a function to build the pokemon id:301 - id:320 list
+function buildPokemonNext321340(pokemon){
+  const html = []
+
+  for(const pok of pokemon){
+    let url = 'https://pokeapi.co/api/v2/pokemon/321/'
+  
+      let id = pok.url.substring(url.substring(0, url.length - 2).lastIndexOf('/') + 1, url.length - 1)
+      html.push(`
+      <div class="pokblock blue col-xl-1-5 col-md-1-5 col-sm-1-5">
       <img
         class="pok-sm-img"     
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
@@ -712,6 +751,18 @@ async function getPokemonNext301320() {
   $pokemon.innerHTML = html.join('')
 }
 
+/** Fetch the data from pokeapi.co next 20 pokemon
+ * and populate the '20 pokemon gallery'
+*/
+/** async / await */
+async function getPokemonNext321340() {
+  const response = await fetch(urlNext321340)
+  data = await response.json()
+  pokemon = await data.results
+  const html = buildPokemonNext321340(pokemon)
+  $pokemon.innerHTML = html.join('')
+}
+
 /** Create a function to fetch and display a single pokemon */
 
 async function getPok(id){
@@ -786,13 +837,23 @@ async function getPok(id){
 /** Define the event listener for the click event */
 $pokemon.addEventListener('click', function(e){
   e.preventDefault()
-  
-  if(e.target.closest('.poklink')){
-      getPok(e.target.closest('.poklink').dataset.id
-          //send the id of the single pokemon (pok)          
-      )
-  }
+
+  let whiteBtn = document.querySelector('.whiteBtn')
+  let pinkBtn = document.querySelector('.pinkBtn')
+
+
+    
+  if(e.target.closest('.poklink')){  
+      getPok(
+        //send the id of the single pokemon (pok)
+        e.target.closest('.poklink').dataset.id, 
+        e.target.closest('.pokblock').classList.toggle('yellow')
+        // e.target.closest('.whiteBtn').classList.toggle('hidden'),                
+        // e.target.closest('.pinkBtn').classList.toggle('hidden')                         
+      )     
+  } 
 })
+
 
 /** Define the event listener for the click event */
 $loadmore2140.addEventListener('click', function(e){
@@ -876,12 +937,17 @@ $loadmore2140.addEventListener('click', function(e){
           getPokemonNext301320()
           loadmore.classList.remove('loadmore301320')
           loadmore.classList.add('loadmore321340')
+  } else if(e.target.classList.contains('loadmore321340')){
+          //build the next 20 pokemon list
+          getPokemonNext321340()
+          loadmore.classList.remove('loadmore321340')
+          loadmore.classList.add('loadmore341360')
   } else {
               // display the pokemon details once the data is fetched
           $loadsNumber.innerHTML = `
 
               <p class="gal-par text-center text-light">You have reached the limit of
-                  <span class="pokname text-uppercase text-light">320</span> Pokémon!
+                  <span class="pokname text-uppercase text-light">340</span> Pokémon!
               </p>
               <p class="gal-par text-center text-light">Click 'Start Again' button to load first
                   <span class="pokname text-uppercase text-light">20</span> Pokémon.
@@ -892,6 +958,7 @@ $loadmore2140.addEventListener('click', function(e){
   }
 })
 
+// reload page and start again
 $startagain.addEventListener('click', function(){
   location.reload()
 })
