@@ -66,68 +66,68 @@
 
 <!-- section 'Chosen Pokemon Display' -->
 
-        <section id="bigPokemon" class="mb-4">
+        <div id="bigPokemon" class="mb-4">
           <div class="row">
             <div id="pokemonBigImg" class="pok-bigimg col-xl-4">
               <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur Big Pokémon" />
             </div>
             <div class="pokInfoBlock col-xl-8 p-0">
               <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-6">
                   <div class="name">
                     <p class="parInfo">
                       <span class="data-name text-uppercase">Name: </span
                       ><span class="data-detail text-capitalize">Bulbasaur</span>
-                      <span class="data-name text-uppercase">Id: </span
+                      <span class="data-name text-uppercase">Id:  </span
                       ><span class="data-detail text-capitalize">1</span>
                     </p>
                   </div>
-                  <div class="moves">
+                  <div class="move">
                     <p class="parInfo">
-                      <span class="data-name text-uppercase">Move: </span
-                      ><span class="data-detail text-capitalize">razor-wind, swords-dance, cut</span>
+                      <span class="data-name text-uppercase">Move: </span>
+                      <span class="data-detail text-capitalize">----</span>
                     </p>
                   </div>
                   <div class="height">
                     <p class="parInfo">
-                      <span class="data-name text-uppercase">Height: </span
-                      ><span class="data-detail text-capitalize">7</span>
+                      <span class="data-name text-uppercase">Height: </span>
+                      <span class="data-detail text-capitalize">----</span>
                     </p>
                   </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-6">
                   <div class="type">
                     <p class="parInfo">
-                      <span class="data-name text-uppercase">Type: </span
-                      ><span class="data-detail text-capitalize">grass, poison</span>
+                      <span class="data-name text-uppercase">Type:  </span>
+                      <span class="data-detail text-capitalize">----</span>
                     </p>
                   </div>
                   <div class="ability">
                     <p class="parInfo">
-                      <span class="data-name text-uppercase">Abilities: </span
-                      ><span class="data-detail text-capitalize">overgrow</span>
+                      <span class="data-name text-uppercase">Abilities:  </span>
+                      <span class="data-detail text-capitalize">----</span>
                     </p>
                   </div>
                   <div class="weight">
                     <p class="parInfo">
-                      <span class="data-name text-uppercase">Weight: </span
-                      ><span class="data-detail text-capitalize">69</span>
+                      <span class="data-name text-uppercase">Weight:  </span>
+                      <span class="data-detail text-capitalize">----</span>
                     </p>
                   </div>
                 </div>
               </div>
               <div id="galLabel" class="row">
-                <div class="col gal-label label m-xl-4">
-                  <p class="gal-par text-center">
-                    Congratulations!</p> 
-                  <p class="gal-par text-center">You caught
+                <div class="col gal-label label m-xl-4"> 
+                  <p class="gal-par text-center">Hi there! I am an initial
                     <span class="pokname text-uppercase">Bulbasaur</span> Pokémon!
+                  </p>
+                  <p class="gal-par text-center">To caught me click the button on my thumbnail in the Pokémon Gallery below!
                   </p>
                 </div>               
               </div>
           </div>
           </div>
-        </section>
+        </div>
 
 <!-- section 'Pokemon Gallery' -->
 
@@ -136,9 +136,10 @@
             <div class="col-xl-2 gal-h2">
               <h2 class="heading-h2 text-decoration-underline">Gallery</h2>
             </div>
-            <div class="col-xl-8"></div>
+            <div id="loadsNumber" class="col-xl-8"></div>
             <div class="col-xl-2 gal-btn text-end p-0">
-              <button class="btn loadmore ps-4 pe-4">Load More..</button>
+              <button id="loadmore" class="btn loadmore2140 ps-4 pe-4">Load More</button>
+              <button id="startagain" class="btn startagain hidden ps-4 pe-4">Start Again</button>
             </div>
           </div>
           <div class="gallery-grid mt-0">
@@ -148,11 +149,11 @@
                   class="pok-sm-img"
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
                   alt="Bulbasaur Small Pokémon"
-                />
+                />1
                 <a href="#bigPokemon" class="btn poklink" role="button">
                   <img
                     class="white-btn"
-                    src="/assets/images/durham_logo_white.png"
+                    src="./assets/images/durham_logo_white.png"
                     alt="White button"
                   />
                 </a>
