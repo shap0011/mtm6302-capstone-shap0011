@@ -504,11 +504,6 @@ function buildPokemonNext301320(pokemon){
   return html
 }
 
-
-
-
-
-
 // parseURL
 // Will return the pokemon's id from the provided url
 
@@ -883,8 +878,6 @@ $loadmore2140.addEventListener('click', function(e){
           loadmore.classList.add('loadmore321340')
   } else {
               // display the pokemon details once the data is fetched
-              // <p class="gal-par text-center text-light">
-              //     Congratulations!</p> 
           $loadsNumber.innerHTML = `
 
               <p class="gal-par text-center text-light">You have reached the limit of
