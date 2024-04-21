@@ -89,17 +89,27 @@ footer .container {
     background-color: #FFFFFF;
  }
 
-.btn {
+#loadmore,
+#startagain {
     background-color: var(--yellow-color);
     border-radius: 10px;
     padding: 0 15px;
     margin-bottom: 15px;
  }
 
- .btn:hover {
+ #loadmore:hover,
+ #startagain:hover {
     color: var(--yellow-color);
     background-color: var(--light-blue-color);
     border-color: var(--yellow-color);
+}
+
+#pokemon .btn {
+    --bs-btn-border-width: none;
+}
+
+.hidden {
+    display: none;
 }
 
  #pokemon .btn {
@@ -128,7 +138,7 @@ footer .container {
     background-color: var(--light-blue-color);  
 }
 
-.name, .moves, .type, .ability, .height, .weight {
+.name, .move, .type, .ability, .height, .weight {
     background-color: var(--white-color);  
     margin: 15px;
 }
