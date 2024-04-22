@@ -51,7 +51,7 @@ function buildPokemon(pokemon){
             <img
             class="white-btn"
             src="./assets/images/durham_logo_white.png"
-            alt="White button"
+            alt="White button" title="Catch Me!"
             />     
         </a>
     </div>
@@ -69,7 +69,7 @@ function buildPokemon(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -100,7 +100,7 @@ function buildPokemonNext2140(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -127,7 +127,7 @@ function buildPokemonNext4160(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -154,7 +154,7 @@ function buildPokemonNext6180(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -182,7 +182,7 @@ function buildPokemonNext81100(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -199,7 +199,7 @@ function buildPokemonNext81100(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -227,7 +227,7 @@ function buildPokemonNext101120(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -254,7 +254,7 @@ function buildPokemonNext121140(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -281,7 +281,7 @@ function buildPokemonNext141160(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -308,7 +308,7 @@ function buildPokemonNext161180(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -335,7 +335,7 @@ function buildPokemonNext181200(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -362,7 +362,7 @@ function buildPokemonNext201220(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -389,7 +389,7 @@ function buildPokemonNext221240(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -416,7 +416,7 @@ function buildPokemonNext241260(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -443,7 +443,7 @@ function buildPokemonNext261280(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -470,7 +470,7 @@ function buildPokemonNext281300(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -497,7 +497,7 @@ function buildPokemonNext301320(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -524,7 +524,7 @@ function buildPokemonNext321340(pokemon){
             <img
               class="white-btn"
               src="./assets/images/durham_logo_white.png"
-              alt="White button"
+              alt="White button" title="Catch Me!"
             />
         </a>
     </div>
@@ -764,7 +764,14 @@ async function getPok(id){
   $bigPok.innerHTML = `
   <div class="row">
     <div id="pokemonBigImg" class="pok-bigimg col-xl-4">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pok.id}.png" alt="Bulbasaur Big Pokémon" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pok.id}.png" alt="${pok.name} Big Pokémon" title="${pok.name}" />
+      <a href="#bigPokemon" class="btn poklink" role="button">
+        <img
+          class="pink-btn"
+          src="./assets/images/durham_logo_pink.png"
+          alt="Alt button" title="Save Me!"
+        />
+      </a>
     </div>
     <div class="pokInfoBlock col-xl-8 p-0">
       <div class="row">

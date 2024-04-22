@@ -56,9 +56,8 @@
                 Clicking on Pokémon will display a larger image of the Pokémon
                 and additional details about the Pokémon. A "Load More" button
                 allows to load the next 20 Pokémon on the page. You can mark
-                Pokémon as caught by clicking on the white circle with a pink
-                dot. You can release the caught Pokémon by clicking on the pink
-                circle with a white dot.
+                Pokémon as caught by clicking on the white circle button. You can save the caught Pokémon by clicking on the pink
+                circle button.
               </p>
             </div>
           </div>
@@ -69,7 +68,14 @@
         <div id="bigPokemon" class="mb-4">
           <div class="row">
             <div id="pokemonBigImg" class="pok-bigimg col-xl-4">
-              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur Big Pokémon" />
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur Big Pokémon" title="bulbasaur" />
+              <a href="#bigPokemon" class="btn poklink" role="button">
+                <img
+                  class="pink-btn"
+                  src="./assets/images/durham_logo_pink.png"
+                  alt="Alt button" title="Save Me!"
+                />
+              </a>
             </div>
             <div class="pokInfoBlock col-xl-8 p-0">
               <div class="row">
@@ -121,7 +127,7 @@
                   <p class="gal-par text-center">Hi there! I am an initial
                     <span class="pokname text-uppercase">Bulbasaur</span> Pokémon!
                   </p>
-                  <p class="gal-par text-center">To catch me click the button on my thumbnail in the Pokémon Gallery below!
+                  <p class="gal-par text-center">To catch me click the button on my thumbnail below!
                   </p>
                 </div>               
               </div>
@@ -154,7 +160,7 @@
                   <img
                     class="white-btn"
                     src="./assets/images/durham_logo_white.png"
-                    alt="White button"
+                    alt="White button" title="Catch Me!"
                   />
                 </a>
               </div>
