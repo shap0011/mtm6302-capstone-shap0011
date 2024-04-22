@@ -48,16 +48,11 @@ function buildPokemon(pokemon){
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
         alt="${pok.name} Small Pokémon" title="${pok.name}"
       /><span class="pokNum">${id}</span><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
-          <img
-            class="pinkBtn"
-            src="./assets/images/durham_logo_pink.png"
-            alt="Pink button"
-          />          
-          <img
-            class="whiteBtn"
+            <img
+            class="white-btn"
             src="./assets/images/durham_logo_white.png"
             alt="White button"
-          />   
+            />     
         </a>
     </div>
       `)
@@ -72,12 +67,7 @@ function buildPokemon(pokemon){
         alt="${pok.name} Small Pokémon" title="${pok.name}"
       /><span class="pokNum">${id}</span><a href="#bigPokemon" class="btn poklink" role="button" data-id="${id}">
             <img
-              class="pinkBtn hidden"
-              src="./assets/images/durham_logo_pink.png"
-              alt="Pink button"
-            />           
-            <img
-              class="whiteBtn"
+              class="white-btn"
               src="./assets/images/durham_logo_white.png"
               alt="White button"
             />
@@ -837,19 +827,12 @@ async function getPok(id){
 /** Define the event listener for the click event */
 $pokemon.addEventListener('click', function(e){
   e.preventDefault()
-
-  let whiteBtn = document.querySelector('.whiteBtn')
-  let pinkBtn = document.querySelector('.pinkBtn')
-
-
-    
+ 
   if(e.target.closest('.poklink')){  
       getPok(
         //send the id of the single pokemon (pok)
         e.target.closest('.poklink').dataset.id, 
-        e.target.closest('.pokblock').classList.toggle('yellow')
-        // e.target.closest('.whiteBtn').classList.toggle('hidden'),                
-        // e.target.closest('.pinkBtn').classList.toggle('hidden')                         
+        e.target.closest('.pokblock').classList.toggle('yellow')             
       )     
   } 
 })

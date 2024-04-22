@@ -186,14 +186,14 @@ footer .container {
     margin: auto;
  }
 
-.whiteBtn {
+.white-btn {
     position: absolute;
     top: 20px;
     right: -20px;
     width: 25%;
  }
 
-.pinkBtn {
+.pink-btn {
     position: absolute;
     top: 20px;
     right: -20px;
