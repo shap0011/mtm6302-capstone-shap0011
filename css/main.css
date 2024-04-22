@@ -104,8 +104,9 @@ footer .container {
     border-color: var(--yellow-color);
 }
 
-#pokemon .btn {
-    --bs-btn-border-width: none;
+#pokemon .btn,
+.btn {
+    --bs-btn-border-width: unset;
 }
 
 .hidden {
@@ -170,14 +171,6 @@ footer .container {
 .yellow {
     background-color: var(--yellow-color);
  }
-/* 
- .galleryBtnWhite {
-    background-image: url('./assets/images/durham_logo_white.png');
- }
-
- .galleryBtnPink {
-    background-image: url('./assets/images/durham_logo_pink.png');
- } */
 
 .pok-sm-img {
     position: relative;
@@ -194,9 +187,6 @@ footer .container {
  }
 
 .pink-btn {
-    /* position: absolute;
-    bottom: 15px;
-    left: 195px; */
     max-width: 10%;
  }
 
