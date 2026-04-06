@@ -1,5 +1,4 @@
 /* CSS Document */
-@import url(bootstrap.min.css);
 @import url(typography.css);
 
 :root {
@@ -17,6 +16,41 @@
         --bs-breakpoint-lg: 992px;
         --bs-breakpoint-xl: 1200px;
         --bs-breakpoint-xxl: 1400px; */
+}
+
+/* App layout: header + main + footer fit into the viewport */
+html,
+body {
+  height: 100%;
+}
+
+.app-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* prevents page vertical scrolling */
+}
+
+.app-header,
+.app-footer {
+  flex: 0 0 auto;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  overflow: hidden; /* main doesn't scroll */
+}
+
+/* Sidebar thumbnail list scrolls internally if there are many */
+.gallery-scroll {
+  overflow: auto;
+  height: 100%;
+}
+
+/* Your existing custom classes can stay; adjust as needed */
+.pok-sm-img {
+  max-height: 70px;
+  object-fit: contain;
 }
 
 /* .main { */
@@ -89,7 +123,9 @@ footer .container {
     background-color: #FFFFFF;
  }
 
-#loadmore,
+/* #loadmore, */
+#prev,
+#next,
 #startagain {
     background-color: var(--yellow-color);
     border-radius: 10px;
@@ -97,11 +133,18 @@ footer .container {
     margin-bottom: 15px;
  }
 
- #loadmore:hover,
+ /* #loadmore:hover, */
+ #prev:hover,
+ #next:hover,
  #startagain:hover {
     color: var(--yellow-color);
     background-color: var(--light-blue-color);
     border-color: var(--yellow-color);
+}
+
+/* Add spacing inside btn-group (Bootstrap normally fuses buttons) */
+.btn-group.gap-buttons > .btn + .btn {
+  margin-left: 0.5rem; /* same visual as gap-2 / me-2 */
 }
 
 #pokemon .btn,
@@ -154,13 +197,15 @@ footer .container {
     position: relative;
  }
 
-.col-xl-1-5,
-.col-md-1-5,
-.col-sm-1-5 {
-    width: 7%;
-    float: left;
-    margin: 20px 35px 0 0;
- }
+/* Only for legacy layout; do not apply in new sidebar grid */
+.legacy-gallery .col-xl-1-5,
+.legacy-gallery .col-md-1-5,
+.legacy-gallery .col-sm-1-5 {
+  width: 7%;
+  float: left;
+  margin: 20px 35px 0 0;
+}
+
 
 
 
@@ -182,7 +227,7 @@ footer .container {
 .white-btn {
     position: absolute;
     top: 10px;
-    left: 75px;
+    position: static;
     width: 25%;
  }
 
