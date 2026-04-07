@@ -79,11 +79,13 @@ The app connects to a public Pokémon API to dynamically fetch and display Poké
 
 ### Colors
 
+```
 - White: #FFFFFF
 - Pink: #DA4899
 - Dark Teal: #0B3C40
 - Yellow: #FFED71
 - Blue: #48CBD9
+```
 
 ### Fonts
 
