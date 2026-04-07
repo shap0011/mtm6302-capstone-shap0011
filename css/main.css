@@ -3,7 +3,7 @@
 
 :root {
     --header-bg-color: #0B3C40;
-    --main-bg-color: #694057;
+    --main-bg-color: #f4f8fb;
     --footer-bg-color: #0B3C40;
     --light-blue-color: #52C5D5;
     --yellow-color: #FEEC70;
@@ -24,27 +24,28 @@ body {
   height: 100%;
 }
 
-.app-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* prevents page vertical scrolling */
-}
-
 .app-header,
 .app-footer {
   flex: 0 0 auto;
 }
 
-.app-main {
-  flex: 1 1 auto;
-  overflow: hidden; /* main doesn't scroll */
+.app-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-/* Sidebar thumbnail list scrolls internally if there are many */
+.app-main {
+  flex: 1 1 auto;
+  overflow: visible;
+}
+
+/* sidebar scrolling disabled for mobile-first layout */
 .gallery-scroll {
-  overflow: auto;
-  height: 100%;
+  overflow: visible;
+  height: auto;
 }
 
 /* Your existing custom classes can stay; adjust as needed */
@@ -53,7 +54,6 @@ body {
   object-fit: contain;
 }
 
-/* .main { */
 body {
     background-color: var(--main-bg-color);
 }
@@ -68,14 +68,6 @@ body {
 
 .logo {
     height: 107px;
-}
-
-.container {
-    max-width: 80%;
-}
-
-footer .container {
-    max-width: 60%;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -168,50 +160,9 @@ footer .container {
     margin-bottom: 15px;
 }
 
-.pok-bigimg {
-    background-color: var(--yellow-color);
-}
-
-.pok-bigimg img {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
 .pokInfoBlock {
     background-color: var(--light-blue-color);  
 }
-
-.name, .move, .type, .ability, .height, .weight {
-    background-color: var(--white-color);  
-    margin: 15px;
-}
-
-.parInfo {
-    padding: 10px;
-}
-
-.col-xl-1-5,
-.col-md-1-5,
-.col-sm-1-5 {
-    position: relative;
- }
-
-/* Only for legacy layout; do not apply in new sidebar grid */
-.legacy-gallery .col-xl-1-5,
-.legacy-gallery .col-md-1-5,
-.legacy-gallery .col-sm-1-5 {
-  width: 7%;
-  float: left;
-  margin: 20px 35px 0 0;
-}
-
-
-
-
-.blue {
-    background-color: var(--light-blue-color); 
- }
 
 .yellow {
     background-color: var(--yellow-color);
@@ -224,21 +175,8 @@ footer .container {
     margin: auto;
  }
 
-.white-btn {
-    position: absolute;
-    top: 10px;
-    position: static;
-    width: 25%;
- }
-
 .pink-btn {
     max-width: 10%;
- }
-
-.col-xl-1-5:first,
-.col-md-1-5:first,
-.col-sm-1-5:first {
-margin-left: 0;
  }
 
  /* tablet */
@@ -248,12 +186,6 @@ margin-left: 0;
     .navbar-expand-md .navbar-nav {
         flex-direction: column;
     }
-
-    .col-md-1-5 {
-        width: 25%;
-        float: left;
-        margin: 20px;
-     }
     
     .pok-sm-img {
         position: relative;
@@ -267,13 +199,6 @@ margin-left: 0;
 
 @media (max-width: 431px) {
     
-    .col-sm-1-5 {
-        width: 30%;
-        float: left;
-        background-color: var(--light-blue-color); 
-        margin: 20px 35px 0 20px;
-     }
-    
     .pok-sm-img {
         width: 110%;
     }
@@ -283,6 +208,313 @@ margin-left: 0;
         width: 100%;
         margin: 20px 20px 20px 0;
     }
+}
+
+/* =========================
+   MOBILE-FIRST LEFT PANEL
+   ========================= */
+
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app-body {
+  overflow: auto;
+}
+
+.app-main {
+  overflow: visible;
+}
+
+.pokemon-panel {
+  background-color: var(--light-blue-color);
+  border: 4px solid var(--yellow-color);
+}
+
+.pokemon-hero {
+  background-color: var(--yellow-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.pokemon-hero-img {
+  max-height: 220px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.pokemon-card {
+  background-color: var(--white-color);
+}
+
+.pokemon-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--header-bg-color);
+}
+
+.pokemon-id {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pokemon-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.info-box {
+  background-color: #f7f7f7;
+  border: 2px solid var(--yellow-color);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--main-bg-color);
+  margin-bottom: 0.2rem;
+}
+
+.info-value {
+  display: block;
+  font-size: 1rem;
+  color: var(--header-bg-color);
+}
+
+.save-btn {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  border-radius: 0.9rem;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  border: 2px solid transparent;
+}
+
+.save-btn:hover,
+.save-btn:focus {
+  background-color: var(--header-bg-color);
+  color: var(--white-color);
+}
+
+.pokemon-message {
+  background-color: var(--white-color);
+  border: 4px solid var(--yellow-color);
+  padding: 1rem;
+}
+
+/* Better mobile spacing */
+#bigPokemon {
+  margin-bottom: 1.5rem;
+}
+
+/* Tablet only */
+@media (min-width: 576px) {
+  .pokemon-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pokemon-hero-img {
+    max-height: 260px;
+  }
+}
+
+/* =========================
+   MOBILE-FIRST GALLERY
+   ========================= */
+
+.gallery-col {
+  margin-bottom: 1rem;
+}
+
+#pokemon {
+  margin-top: 1rem;
+}
+
+.pokemon-thumb-card {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 40%,
+    var(--light-blue-color) 100%
+  );
+  border: 3px solid var(--yellow-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.pokemon-thumb-card:hover {
+  transform: translateY(-4px);
+}
+
+.pok-sm-img {
+  width: 100%;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.pokemon-thumb-id {
+  color: #9aa8b2;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.pokemon-thumb-name {
+  color: var(--header-bg-color);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+/* =========================
+   LOGO BUTTON (CATCH)
+   ========================= */
+
+.catch-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0.4rem;
+  margin-top: auto;
+}
+
+.catch-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.catch-btn:hover .catch-icon {
+  transform: scale(1.1);
+}
+
+/*================*/
+
+#loadsNumber {
+  text-align: center;
+  font-weight: 700;
+  margin: 0.75rem 0 1rem;
+  color: var(--header-bg-color);
+}
+
+.gallery-card {
+  width: 100%;
+}
+
+#pokemon {
+  margin-top: 0.5rem;
+}
+
+.gallery-col {
+  margin-bottom: 1rem;
+}
+
+.pokemon-thumb-card {
+  height: 100%;
+}
+
+/* Navbar text color fix */
+.navbar .nav-link {
+  color: #9aa8b2 !important;
+}
+
+/* Button styled like nav link */
+.nav-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Hover / active states */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--light-blue-color) !important;
+}
+
+.logo-literal {
+    color: #9aa8b2;
+}
+
+.pagination-btn {
+  background-color: var(--white-color);
+  color: #9aa8b2 !important;   /* force override */
+  border: 2px solid var(--yellow-color);
+  font-weight: 600;
+}
+
+.pagination-btn:hover {
+  background-color: var(--light-blue-color);
+  color: var(--header-bg-color) !important;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #9aa8b2 !important;
+}
+
+.saved-panel {
+  background-color: var(--white-color);
+  border: 3px solid var(--yellow-color);
+}
+
+.saved-title {
+  color: var(--header-bg-color);
+}
+
+.saved-card {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 35%,
+    var(--light-blue-color) 100%
+  );
+  border: 2px solid var(--yellow-color);
+}
+
+.saved-img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.saved-id {
+  color: var(--main-bg-color);
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.saved-name {
+  color: var(--header-bg-color);
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+.remove-btn {
+  background-color: var(--pink-color);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.remove-btn:hover {
+  background-color: var(--header-bg-color);
 }
 
  

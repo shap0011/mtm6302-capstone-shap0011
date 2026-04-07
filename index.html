@@ -43,7 +43,7 @@
               <li class="nav-item">
                 <button
                   type="button"
-                  class="btn btn-link nav-link"
+                  class="nav-link nav-button"
                   data-bs-toggle="modal"
                   data-bs-target="#howToPlayModal"
                 >
@@ -66,126 +66,85 @@
       <div class="container-fluid h-100 px-3 py-3">
         <div class="row h-100 g-3">
           <!-- LEFT: Big Pokémon + Info -->
-          <section class="col-lg-8 h-100">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <!-- Big Pokemon block -->
-                <div id="bigPokemon" class="h-100 d-flex flex-column">
-                  <div class="row g-3 align-items-start">
-                    <div
-                      id="pokemonBigImg"
-                      class="col-md-5 col-xl-4 text-center"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                        alt="Bulbasaur Big Pokémon"
-                        title="bulbasaur"
-                        style="max-height: 260px; object-fit: contain"
-                      />
+          <section id="bigPokemon" class="pokemon-panel rounded-4 p-3 mb-4">
+            <div class="pokemon-hero text-center mb-3">
+              <img
+                id="bigPokemonImage"
+                class="img-fluid pokemon-hero-img"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="Bulbasaur Big Pokémon"
+                title="bulbasaur"
+              />
+            </div>
 
-                      <!-- Save button (kept your structure) -->
-                      <div class="mt-2">
-                        <a
-                          href="#bigPokemon"
-                          class="btn p-0 poklink"
-                          role="button"
-                          aria-label="Save Pokemon"
-                        >
-                          <img
-                            class="pink-btn"
-                            src="./assets/images/durham_logo_pink.png"
-                            alt="Save button"
-                            title="Save Me!"
-                            style="width: 44px; height: 44px"
-                          />
-                        </a>
-                      </div>
-                    </div>
+            <div class="pokemon-card rounded-4 p-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2 id="pokeName" class="pokemon-title text-capitalize mb-0">
+                  Bulbasaur
+                </h2>
+                <span id="pokeId" class="pokemon-id">#1</span>
+              </div>
 
-                    <div class="col-md-7 col-xl-8">
-                      <div class="row g-2">
-                        <div class="col-sm-6">
-                          <p class="mb-2">
-                            <span class="data-name text-uppercase">Name: </span>
-                            <span class="data-detail text-capitalize"
-                              >Bulbasaur</span
-                            >
-                            <br />
-                            <span class="data-name text-uppercase">Id: </span>
-                            <span class="data-detail">1</span>
-                          </p>
+              <div class="pokemon-info-grid">
+                <div class="info-box">
+                  <span class="info-label">Move</span>
+                  <span id="pokeMove" class="info-value text-capitalize"
+                    >----</span
+                  >
+                </div>
 
-                          <p class="mb-2">
-                            <span class="data-name text-uppercase">Move: </span>
-                            <span class="data-detail text-capitalize"
-                              >----</span
-                            >
-                          </p>
+                <div class="info-box">
+                  <span class="info-label">Type</span>
+                  <span id="pokeType" class="info-value text-capitalize"
+                    >----</span
+                  >
+                </div>
 
-                          <p class="mb-0">
-                            <span class="data-name text-uppercase"
-                              >Height:
-                            </span>
-                            <span class="data-detail">----</span>
-                          </p>
-                        </div>
+                <div class="info-box">
+                  <span class="info-label">Abilities</span>
+                  <span id="pokeAbilities" class="info-value text-capitalize"
+                    >----</span
+                  >
+                </div>
 
-                        <div class="col-sm-6">
-                          <p class="mb-2">
-                            <span class="data-name text-uppercase">Type: </span>
-                            <span class="data-detail text-capitalize"
-                              >----</span
-                            >
-                          </p>
+                <div class="info-box">
+                  <span class="info-label">Height</span>
+                  <span id="pokeHeight" class="info-value">----</span>
+                </div>
 
-                          <p class="mb-2">
-                            <span class="data-name text-uppercase"
-                              >Abilities:
-                            </span>
-                            <span class="data-detail text-capitalize"
-                              >----</span
-                            >
-                          </p>
-
-                          <p class="mb-0">
-                            <span class="data-name text-uppercase"
-                              >Weight:
-                            </span>
-                            <span class="data-detail">----</span>
-                          </p>
-                        </div>
-                      </div>
-
-                      <!-- Message label -->
-                      <div
-                        id="galLabel"
-                        class="alert mt-3 mb-0 text-center"
-                        role="alert"
-                      >
-                        <p class="mb-1">
-                          Hi there! I am an initial
-                          <span class="pokname text-uppercase">Bulbasaur</span>
-                          Pokémon!
-                        </p>
-                        <p class="mb-0">
-                          To catch me click the button on my thumbnail on the
-                          right!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Optional: space for future content without pushing layout -->
-                  <div class="flex-grow-1"></div>
+                <div class="info-box">
+                  <span class="info-label">Weight</span>
+                  <span id="pokeWeight" class="info-value">----</span>
                 </div>
               </div>
+
+              <button id="saveMe" class="btn save-btn w-100 mt-3" type="button">
+                Save Me!
+              </button>
+            </div>
+
+            <div
+              id="galLabel"
+              class="pokemon-message rounded-4 mt-3 text-center"
+            >
+              <p class="mb-1">
+                Hi there! I am
+                <span class="pokname text-uppercase">Bulbasaur</span>
+              </p>
+              <p class="mb-0">Catch me from the gallery below.</p>
             </div>
           </section>
 
+          <section class="saved-panel rounded-4 p-3 mt-4">
+            <h3 class="saved-title mb-3">My Saved Pokémon</h3>
+            <div id="savedPokemonList" class="row g-3"></div>
+          </section>
+
           <!-- RIGHT: Gallery sidebar -->
-          <aside class="col-lg-4 h-100">
-            <div class="card h-100 shadow-sm">
+          <section class="col-12">
+            <div class="card shadow-sm gallery-card">
               <div class="card-header bg-transparent">
                 <div
                   class="d-flex align-items-center justify-content-between gap-2 flex-wrap"
@@ -205,15 +164,23 @@
                       role="group"
                       aria-label="Gallery pagination"
                     >
-                      <button id="prev" class="btn btn-primary" type="button">
+                      <button
+                        id="prev"
+                        class="btn pagination-btn"
+                        type="button"
+                      >
                         Previous
                       </button>
-                      <button id="next" class="btn btn-primary" type="button">
+                      <button
+                        id="next"
+                        class="btn pagination-btn"
+                        type="button"
+                      >
                         Next
                       </button>
                       <button
                         id="startagain"
-                        class="btn btn-primary hidden"
+                        class="btn pagination-btn hidden"
                         type="button"
                       >
                         Start Again
@@ -224,7 +191,7 @@
               </div>
 
               <!-- Scrollable thumbnail area -->
-              <div class="card-body p-2 gallery-scroll">
+              <div class="card-body p-2">
                 <div id="pokemon" class="row g-2">
                   <!-- Example thumb -->
                   <div class="col-4 col-sm-3 col-lg-6 col-xl-4">
@@ -238,16 +205,15 @@
 
                       <a
                         href="#bigPokemon"
-                        class="btn p-0 mt-1 poklink"
+                        class="btn poklink catch-btn mt-2"
                         role="button"
+                        data-id="${id}"
                         aria-label="Catch Pokemon"
                       >
                         <img
-                          class="white-btn"
+                          class="catch-icon"
                           src="./assets/images/durham_logo_white.png"
                           alt="Catch button"
-                          title="Catch Me!"
-                          style="width: 34px; height: 34px"
                         />
                       </a>
                     </div>
@@ -256,7 +222,7 @@
                 </div>
               </div>
             </div>
-          </aside>
+          </section>
         </div>
       </div>
     </main>

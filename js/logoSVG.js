@@ -4,28 +4,26 @@ const htmlSVG = `
 <svg id="LOGO_copy_2" class="logo" data-name="LOGO copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="800 -75 600 700">
                       <defs>
                         <style>
-                          .cls-1 {
-                            fill: #da4899;
-                          }
+                          .cls-1 { fill: #e05aa3; }
                     
                           .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
                             stroke-width: 0px;
                           }
                     
                           .cls-2 {
-                            fill: #feec70;
+                            fill: #ffd95a;
                           }
                     
                           .cls-3 {
-                            fill: #694057;
+                            fill: #0b3c40;
                           }
                     
                           .cls-4 {
-                            fill: #fff;
+                            fill: #9aa8b2;
                           }
                     
                           .cls-5 {
-                            fill: #52c5d5;
+                            fill: #5fd0df;
                           }
                     
                           .cls-6 {
@@ -41,9 +39,9 @@ const htmlSVG = `
                       <path class="cls-5" d="M1231.13,384.08l25.57,16.01s73.42-124.44,3.1-241.05c-67.22-111.46-169.51-127.55-215.3-127.51v30s130.05-5.07,190.53,115.09c59.35,117.92-3.89,207.46-3.89,207.46Z"/>
                       <path class="cls-3" d="M1230.69,385.1l26.62,14.19s-71.31,125.66-207.45,122.79c-130.13-2.74-195.05-83.42-217.83-123.13l26.01-14.95s60.4,115.28,194.72,107.84c131.81-7.3,177.93-106.74,177.93-106.74Z"/>
                     </svg>
-`
+`;
 
-$headerLogo.innerHTML = htmlSVG
+$headerLogo.innerHTML = htmlSVG;
 
 const $footerLogo = document.getElementById("linkLogoFooter");
-$footerLogo.innerHTML = htmlSVG
+$footerLogo.innerHTML = htmlSVG;
