@@ -282,7 +282,8 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--main-bg-color);
+  /* color: var(--main-bg-color); */
+  color: #0B3C40;
   margin-bottom: 0.2rem;
 }
 
@@ -493,7 +494,7 @@ body {
 }
 
 .saved-id {
-  color: var(--main-bg-color);
+  color: #9AA8B2;
   font-weight: 700;
   margin-top: 0.25rem;
 }
